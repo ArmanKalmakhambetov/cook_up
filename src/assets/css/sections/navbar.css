@@ -1,0 +1,7 @@
+.header__box, .header__list, .header__left {
+    display: flex;
+    text-decoration: none;
+}
+
+
+
