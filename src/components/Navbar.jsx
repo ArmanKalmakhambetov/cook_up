@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 import {
   HOME_PAGE_ROUTE,
@@ -12,29 +14,33 @@ import {
 export default function Navbar() {
   return (
     <header className="header">
+      <div className="header__black-top"></div>
       <div className="header__box">
         <div className="header__left">
           <ul className="header__left-list">
             <Link to={HOME_PAGE_ROUTE}>
-              <li className="header__logo">logo</li>
+              <li className="header__logo">cook app</li>
             </Link>
           </ul>
           <div className="header__list">
-            <Link to={RECIPES_PAGE_ROUTE}>
+            <Link className="header__list-item" to={RECIPES_PAGE_ROUTE}>
               <li className="header__list-item">Рецепты</li>
             </Link>
-            <Link to={CONTACT_PAGE_ROUTE}>
+            <Link className="header__list-item" to={CONTACT_PAGE_ROUTE}>
               <li className="header__list-item">Контакты</li>
             </Link>
-            <Link to={ABOUT_PAGE_ROUTE}>
+            <Link className="header__list-item" to={ABOUT_PAGE_ROUTE}>
               <li className="header__list-item">О нас</li>
             </Link>
-            <Link to={SETTINGS_PAGE_ROUTE}>
+            <Link className="header__list-item" to={SETTINGS_PAGE_ROUTE}>
               <li className="header__list-item">Настройки</li>
             </Link>
           </div>
         </div>
-        <div className="header__right"></div>
+
+        <button className="header__right">
+          <FontAwesomeIcon icon={faSearch} />
+        </button>
       </div>
     </header>
   );

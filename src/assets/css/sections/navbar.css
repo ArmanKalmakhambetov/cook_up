@@ -1,7 +1,60 @@
+.header {
+    border-bottom: 1px solid var(--grey-body);
+    margin-bottom: 7%;
+}
+
+.header__box {
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.header__black-top {
+    width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: var(--black);
+    height: 45px;
+}
+
 .header__box, .header__list, .header__left {
     display: flex;
     text-decoration: none;
+    justify-content: space-between;
 }
 
+.header__list-item {
+    
+    width: auto;
+    align-items: center;
+    display: grid;
+    padding-right: 10px;
+    text-decoration: none;
+    color: var(--black);
 
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.header__logo {
+    font-size: 32px;
+    padding: 20px;
+    color: var(--black);
+    font-family: "Dancing Script", cursive;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+
+.header__right {
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px;
+}
 
