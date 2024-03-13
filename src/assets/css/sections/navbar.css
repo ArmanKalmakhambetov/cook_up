@@ -1,11 +1,12 @@
 .header {
-  border-bottom: 1px solid var(--grey-body);
-  margin-bottom: 7%;
+  background: white;
+  
 }
 
 .header__box {
   width: 1200px;
   margin: 0 auto;
+  
 }
 
 .header__black-top {
@@ -78,4 +79,10 @@
   cursor: pointer;
   background-color: transparent;
   padding: 10px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }

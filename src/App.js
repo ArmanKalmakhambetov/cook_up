@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div>
+      <div className="app">
         <AppRouter />
       </div>
       <Footer />

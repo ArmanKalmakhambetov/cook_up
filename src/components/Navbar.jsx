@@ -13,9 +13,9 @@ import {
 
 export default function Navbar() {
   return (
-    <header className="header">
+    <header className="header sticky">
       <div className="header__black-top"></div>
-      <div className="header__box">
+      <div className="header__box ">
         <div className="header__left">
           <ul className="header__left-list">
             <Link to={HOME_PAGE_ROUTE}>

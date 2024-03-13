@@ -1,7 +1,16 @@
-import React from 'react'
+import { Link } from "react-router-dom";
 
-export default function NotFoundPage() {
+function NotFoundPage() {
   return (
-    <div>NotFoundPage</div>
-  )
+    <div className="container height800">
+        <p className="not-found-404">
+          404
+        </p>
+        <h2 className="not-found-title">
+          Ничего не найдено! Перейти на <Link to="/">главную</Link>
+        </h2>
+    </div>
+  );
 }
+
+export default NotFoundPage;
