@@ -1,16 +1,14 @@
-import React from 'react'
+import React from "react";
 import { useState, useEffect } from "react";
 import axiosInstance from "../services/axios";
 import Loader from "../components/Loader";
 import Error from "../components/Error";
-import ReceiptList from '../components/ReceiptList';
+import Authors from "../components/Authors";
 
-export default function RecipesPage() {
+export default function AuthorsPage() {
   const [users, setUsers] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
-
-  
 
   useEffect(() => {
     async function fetchPosts() {
@@ -38,7 +36,7 @@ export default function RecipesPage() {
 
   return (
     <div className="container__center">
-      <ReceiptList users={users} />
+      <Authors users={users} />
     </div>
   );
 }

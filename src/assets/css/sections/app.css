@@ -1,13 +1,30 @@
 .app {
-  height: auto;
-  background: var(--grey-body);
+  background: var(--bg-color);
+}
+
+.container {
+  width: 1200px;
+  padding: 60px 0;
+  margin: 0 auto;
+}
+
+.app-title {
+  color: var(--title);
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.just-center {
+  justify-content: center;
 }
 
 .container__center {
   width: 1000px;
   padding: 60px 0;
   margin: 0 auto;
-  background: white;
+  background: var(--bg-center);
   padding: 30px;
   min-width: 1000px;
 }
@@ -18,15 +35,21 @@
   --title: var(--dark-title);
   --gray: var(--light-gray);
   --border: var(--dark-border);
+  --bg-center: var(--dark-bg-center);
+  --text: var(--dark-text);
+  --bg-tag-hover: var(--dark-bg-tag);
+  --bg-author: var(--dark-bg-author);
+  --bg-black-top: var(--dark-bg-top);
+  --bg-nav: var(--dark-bg-nav);
 }
 
 .not-found-404 {
   width: 300px;
   font-weight: 500;
   font-size: 192px;
-  color: #fc4308;
-  margin: auto;
-  text-shadow: 0px 0px 20px #fc4308;
+  color: #b0ada7;
+  margin: 2rem auto;
+  text-shadow: 0px 0px 20px #979595;
 }
 
 .not-found-title {

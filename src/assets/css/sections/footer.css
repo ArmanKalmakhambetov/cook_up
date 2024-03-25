@@ -1,5 +1,5 @@
 .footer {
-  background: var(--white);
+  background: var(--bg-nav);
   padding: 36px 0 0;
 }
 
@@ -27,7 +27,7 @@
   display: grid;
   padding: 10px;
   text-decoration: none;
-  color: var(--black);
+  color: var(--title);
 
   font-size: 8px;
   text-transform: uppercase;
@@ -71,6 +71,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--text);
 }
 
 .footer__bot {
@@ -89,6 +90,6 @@
   width: 1200px;
   margin: 0 auto;
   width: 100%;
-  background-color: var(--black);
+  background-color: var(--bg-black-top);
   height: 45px;
 }

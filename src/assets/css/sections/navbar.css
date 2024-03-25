@@ -1,5 +1,5 @@
 .header {
-  background: white;
+  background: var(--bg-nav);
   
 }
 
@@ -13,7 +13,7 @@
   width: 1200px;
   margin: 0 auto;
   width: 100%;
-  background-color: var(--black);
+  background-color: var(--bg-black-top);
   height: 45px;
 }
 
@@ -31,7 +31,7 @@
   display: grid;
   padding: 10px;
   text-decoration: none;
-  color: var(--black);
+  color: var(--title);
 
   font-size: 10px;
   text-transform: uppercase;
@@ -58,7 +58,7 @@
 .header__logo {
   font-size: 32px;
   padding: 20px;
-  color: var(--black);
+  color: var(--title);
   font-family: "Russo One", sans-serif;
   align-items: center;
   text-transform: uppercase;

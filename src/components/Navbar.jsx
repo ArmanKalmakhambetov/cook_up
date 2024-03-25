@@ -1,19 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import classnames from "classnames";
+import { useTheme } from "../providers/ThemeProvider";
 
 import {
   HOME_PAGE_ROUTE,
   RECIPES_PAGE_ROUTE,
-  CONTACT_PAGE_ROUTE,
+  
   ABOUT_PAGE_ROUTE,
   SETTINGS_PAGE_ROUTE,
 } from "../utils/consts";
 
 export default function Navbar() {
+  const { isDarkTheme } = useTheme();
   return (
-    <header className="header sticky">
+    <header className={classnames("header sticky", { dark: isDarkTheme })}>
       <div className="header__black-top"></div>
       <div className="header__box ">
         <div className="header__left">
@@ -26,11 +27,9 @@ export default function Navbar() {
             <Link className="header__list-item" to={RECIPES_PAGE_ROUTE}>
               <li className="header__list-item">Рецепты</li>
             </Link>
-            <Link className="header__list-item" to={CONTACT_PAGE_ROUTE}>
-              <li className="header__list-item">Контакты</li>
-            </Link>
+            
             <Link className="header__list-item" to={ABOUT_PAGE_ROUTE}>
-              <li className="header__list-item">О нас</li>
+              <li className="header__list-item">Авторы</li>
             </Link>
             <Link className="header__list-item" to={SETTINGS_PAGE_ROUTE}>
               <li className="header__list-item">Настройки</li>
@@ -38,9 +37,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <button className="header__right">
-          <FontAwesomeIcon icon={faSearch} />
-        </button>
+       
       </div>
     </header>
   );
